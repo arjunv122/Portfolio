@@ -103,7 +103,9 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
 
 // ── Contact form handler (EmailJS) ──
 // Initialize EmailJS with your public key
-emailjs.init('HRttN8QprKqVKMA-i');
+(function () {
+  emailjs.init({ publicKey: 'HRttN8QprKqVKMA-i' });
+})();
 
 const contactForm = document.getElementById('contactForm');
 const formResult = document.getElementById('formResult');
@@ -116,7 +118,16 @@ contactForm.addEventListener('submit', function (e) {
   submitBtn.innerHTML = '⏳ Sending...';
   formResult.style.display = 'none';
 
-  emailjs.sendForm('service_68c1f29', 'template_14ntxtc', contactForm)
+  const templateParams = {
+    from_name: document.getElementById('formName').value,
+    email: document.getElementById('formEmail').value,
+    reply_to: document.getElementById('formEmail').value,
+    subject: document.getElementById('formSubject').value || 'Portfolio Contact',
+    message: document.getElementById('formMessage').value,
+    to_name: 'Arjun V',
+  };
+
+  emailjs.send('service_68c1f29', 'template_14ntxtc', templateParams)
     .then(() => {
       formResult.style.display = 'block';
       formResult.style.color = '#10b981';
@@ -126,13 +137,13 @@ contactForm.addEventListener('submit', function (e) {
     .catch((error) => {
       formResult.style.display = 'block';
       formResult.style.color = '#ef4444';
-      formResult.innerHTML = '❌ Something went wrong. Please email me at arjunv12214@gmail.com';
+      formResult.innerHTML = '❌ Error: ' + (error.text || 'Unknown error. Please email me directly.');
       console.error('EmailJS error:', error);
     })
     .finally(() => {
       submitBtn.disabled = false;
       submitBtn.innerHTML = '🚀 Send Message';
-      setTimeout(() => { formResult.style.display = 'none'; }, 5000);
+      setTimeout(() => { formResult.style.display = 'none'; }, 6000);
     });
 });
 
