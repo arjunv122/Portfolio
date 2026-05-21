@@ -101,20 +101,40 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
   });
 });
 
-// ── Contact form handler ──
-function handleSubmit(e) {
+// ── Contact form handler (EmailJS) ──
+// Initialize EmailJS with your public key
+emailjs.init('HRttN8QprKqVKMA-i');
+
+const contactForm = document.getElementById('contactForm');
+const formResult = document.getElementById('formResult');
+const submitBtn = document.getElementById('submitBtn');
+
+contactForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  const name = document.getElementById('formName').value;
-  const email = document.getElementById('formEmail').value;
-  const subject = document.getElementById('formSubject').value;
-  const message = document.getElementById('formMessage').value;
-  const mailtoLink = `mailto:arjunv12214@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Contact')}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
-  window.location.href = mailtoLink;
   
-  const btn = e.target.querySelector('button');
-  btn.textContent = '✅ Opening mail client...';
-  setTimeout(() => { btn.innerHTML = '🚀 Send Message'; }, 3000);
-}
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '⏳ Sending...';
+  formResult.style.display = 'none';
+
+  emailjs.sendForm('service_68c1f29', 'template_14ntxtc', contactForm)
+    .then(() => {
+      formResult.style.display = 'block';
+      formResult.style.color = '#10b981';
+      formResult.innerHTML = '✅ Message sent successfully! I\'ll get back to you soon.';
+      contactForm.reset();
+    })
+    .catch((error) => {
+      formResult.style.display = 'block';
+      formResult.style.color = '#ef4444';
+      formResult.innerHTML = '❌ Something went wrong. Please email me at arjunv12214@gmail.com';
+      console.error('EmailJS error:', error);
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '🚀 Send Message';
+      setTimeout(() => { formResult.style.display = 'none'; }, 5000);
+    });
+});
 
 // ── Clickable project cards + Tilt effect ──
 document.querySelectorAll('.project-card').forEach(card => {
