@@ -127,7 +127,7 @@ contactForm.addEventListener('submit', function (e) {
     to_name: 'Arjun V',
   };
 
-  emailjs.send('service_68c1f29', 'template_14ntxtc', templateParams)
+  emailjs.send('service_68c1f29', 'template_sp3tv5p', templateParams)
     .then(() => {
       formResult.style.display = 'block';
       formResult.style.color = '#10b981';
