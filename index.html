@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun V — Cybersecurity & Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Arjun V — B.Tech Cybersecurity & IoT student specializing in ethical hacking, penetration testing, and full-stack MERN development.">
+  <meta name="keywords" content="Arjun V, Cybersecurity, Ethical Hacking, Full-Stack Developer, MERN, Portfolio">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+
+<body>
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow cyan"></div>
+  <div class="bg-glow purple"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span class="bracket">&lt;</span>Arjun<span class="bracket">/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeNav()">About</a></li>
+        <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+        <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+        <li><a href="#achievements" onclick="closeNav()">Achievements</a></li>
+        <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge"><span class="dot"></span> Open to opportunities</div>
+          <h1 class="hero-name">Hi, I'm <span class="highlight">Arjun V</span></h1>
+          <p class="hero-role typing-cursor">Cybersecurity Enthusiast & Full-Stack Developer</p>
+          <p class="hero-desc">B.Tech student in Cybersecurity & IoT at SRIHER, Chennai. Passionate about ethical
+            hacking, vulnerability assessment, and building secure, scalable web applications.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">🚀 View Projects</a>
+            <a href="https://github.com/arjunv122" target="_blank" class="btn btn-outline">⚡ GitHub</a>
+            <a href="https://www.linkedin.com/in/arjunv12/" target="_blank" class="btn btn-outline">💼 LinkedIn</a>
+            <a href="https://leetcode.com/u/7V3IynF2rv/" target="_blank" class="btn btn-outline">🧩 LeetCode</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" id="counterProjects">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" id="counterRepos">0</div>
+              <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" id="counterInternships">0</div>
+              <div class="stat-label">Internships</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"><img src="avatar.png" alt="Arjun V - Cybersecurity Professional"></div>
+            <div class="avatar-float-badge top">🛡️ Ethical Hacker</div>
+            <div class="avatar-float-badge bottom">💻 MERN Stack</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// who am i</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a motivated B.Tech student specializing in <strong>Cybersecurity & IoT</strong> at SRIHER, Chennai. My
+            passion lies in ethical hacking, penetration testing, and building secure applications that make a
+            real-world impact.</p>
+          <p>With hands-on experience from internships at <strong>SeeDataMD</strong>, <strong>TetroInfoTech</strong>,
+            and <strong>Chimertech</strong>, I've worked on vulnerability assessments, network pen-testing frameworks,
+            and IoT automation systems. I've also co-authored research papers and presented at international
+            conferences.</p>
+          <p>Beyond security, I'm a proficient <strong>MERN stack developer</strong> who enjoys building full-stack
+            applications with clean architecture and robust access control systems.</p>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="label">Location</div>
+              <div class="value">📍 Chennai, Tamil Nadu</div>
+            </div>
+            <div class="info-item">
+              <div class="label">University</div>
+              <div class="value">🎓 SRIHER, Porur</div>
+            </div>
+            <div class="info-item">
+              <div class="label">Degree</div>
+              <div class="value">💻 B.Tech CSE (Cyber & IoT)</div>
+            </div>
+            <div class="info-item">
+              <div class="label">CGPA</div>
+              <div class="value">⭐ 8.4 (Pursuing)</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="edu-card">
+            <span class="edu-year">2023 – 2027</span>
+            <div class="edu-title">B.Tech – CSE (Cybersecurity & IoT)</div>
+            <div class="edu-school">SRIHER, Porur, Chennai</div>
+            <span class="edu-score">CGPA: 8.4</span>
+          </div>
+          <div class="edu-card">
+            <span class="edu-year">2023</span>
+            <div class="edu-title">XII (Senior Secondary)</div>
+            <div class="edu-school">Sudharsanam Vidyaashram, Thiruverkadu</div>
+            <span class="edu-score">CBSE — 69%</span>
+          </div>
+          <div class="edu-card">
+            <span class="edu-year">2021</span>
+            <div class="edu-title">X (Secondary)</div>
+            <div class="edu-school">G.K. Shetty Vivekananda Vidyalaya, Ambattur</div>
+            <span class="edu-score">CBSE — 67%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// my toolbox</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category reveal">
+          <div class="cat-icon">🔐</div>
+          <div class="cat-title">Security Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Nmap</span><span class="skill-tag">OWASP ZAP</span>
+            <span class="skill-tag">Burp Suite</span><span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Metasploit</span><span class="skill-tag">Kali Linux</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="cat-icon">💻</div>
+          <div class="cat-title">Programming Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">C</span><span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span><span class="skill-tag">R</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="cat-icon">🌐</div>
+          <div class="cat-title">Web Stack (MERN)</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span><span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span><span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">HTML/CSS</span><span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="cat-icon">🛠️</div>
+          <div class="cat-title">Tools & Platforms</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span><span class="skill-tag">ESP32</span>
+            <span class="skill-tag">Ubuntu</span><span class="skill-tag">Windows</span>
+            <span class="skill-tag">Vercel</span><span class="skill-tag">Flask</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// where i've worked</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-card">
+            <span class="timeline-date">May – Jun 2025</span>
+            <h3 class="timeline-role">Vulnerability Assessment Intern</h3>
+            <div class="timeline-company">SeeDataMD · Chennai (Remote)</div>
+            <p class="timeline-desc">Conducted end-to-end vulnerability assessment on the SeeDataMD platform; documented
+              critical security weaknesses and hardened the Dotzza product frontend against common web exploits.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-card">
+            <span class="timeline-date">Dec 2025 – Jan 2026</span>
+            <h3 class="timeline-role">Network Penetration Testing Intern</h3>
+            <div class="timeline-company">TetroInfoTech · Remote</div>
+            <p class="timeline-desc">Built a Python-based pen-testing framework (RT-02) covering scanning, service
+              enumeration, vulnerability analysis, automated PDF reporting, and a web-based attack path dashboard.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-card">
+            <span class="timeline-date">Dec 2025 – Jan 2026</span>
+            <h3 class="timeline-role">IoT Embedded Systems Intern</h3>
+            <div class="timeline-company">Chimertech Pvt. Ltd. · Peravallur, Chennai</div>
+            <p class="timeline-desc">Developed an ESP32-based IoT automation system with a real-time web dashboard;
+              improved firmware architecture and implemented Wi-Fi connectivity for remote monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// what i've built</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-href="https://github.com/arjunv122/MLMODEL">
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+            <div class="project-links">
+              <a href="https://github.com/arjunv122/MLMODEL" target="_blank" title="View Source">&#60;/&#62;</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge published">📄 ICCIC 2025 Paper</span>
+            <h3 class="project-title">LLM-Powered Vulnerability Assessment</h3>
+            <p class="project-desc">Built a 3-phase automated pipeline using Nmap, OWASP ZAP, and Mistral LLM to scan 10
+              U.S. university websites, analyze 156 findings with quantitative risk-scoring, and generate AI-assisted
+              PDF reports.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Nmap</span><span>OWASP ZAP</span><span>Mistral LLM</span><span>Ollama</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-href="https://github.com/arjunv122/TETROINFOTECH">
+          <div class="project-header">
+            <div class="project-icon">🔍</div>
+            <div class="project-links">
+              <a href="https://github.com/arjunv122/TETROINFOTECH" target="_blank" title="View Source">&#60;/&#62;</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge internship">🏢 TetroInfoTech</span>
+            <h3 class="project-title">RT-02: Network Pen-Testing Toolkit</h3>
+            <p class="project-desc">Automated pen-testing framework with scanning, service enumeration, vulnerability
+              analysis, structured PDF reporting, and a web-based attack path dashboard for non-technical stakeholders.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>Nmap</span><span>Metasploit</span><span>HTML/CSS/JS</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-href="https://support-ticket-management-pi.vercel.app/">
+          <div class="project-header">
+            <div class="project-icon">🎫</div>
+            <div class="project-links">
+              <a href="https://github.com/arjunv122/Support-Ticket-Management" target="_blank"
+                title="View Source">&#60;/&#62;</a>
+              <a href="https://support-ticket-management-pi.vercel.app/" target="_blank" title="Live Demo">🔗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge deployed">🚀 Deployed on Vercel</span>
+            <h3 class="project-title">Support Ticket Management System</h3>
+            <p class="project-desc">Full-stack RBAC ticketing app with JWT authentication, single-reassignment rule
+              enforcement, role-specific dashboards, and persistent MongoDB database for enterprise ticket management.
+            </p>
+            <div class="project-tech">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-href="https://github.com/arjunv122/MLMODEL">
+          <div class="project-header">
+            <div class="project-icon">❤️</div>
+            <div class="project-links">
+              <a href="https://github.com/arjunv122/MLMODEL" target="_blank" title="View Source">&#60;/&#62;</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge published">📚 Book Chapter</span>
+            <h3 class="project-title">Heart Disease Classification (ML & PSO)</h3>
+            <p class="project-desc">Co-authored book chapter applying Particle Swarm Optimization for hyperparameter
+              tuning in ML-based heart disease classification; evaluated via accuracy, precision, recall, and F1-score.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Scikit-learn</span><span>PSO</span><span>Machine Learning</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-href="https://frontend-murex-chi-99.vercel.app/">
+          <div class="project-header">
+            <div class="project-icon">🎓</div>
+            <div class="project-links">
+              <a href="https://github.com/arjunv122/EduFlow" target="_blank" title="View Source">&#60;/&#62;</a>
+              <a href="https://frontend-murex-chi-99.vercel.app/" target="_blank" title="Live Demo">🔗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge deployed">🌐 Academic Portal</span>
+            <h3 class="project-title">EduFlow — Academic Management Portal</h3>
+            <p class="project-desc">Comprehensive academic platform with role-based dashboards for admin, faculty, and
+              students. Features quiz proctoring, course management, and real-time governance reporting.</p>
+            <div class="project-tech">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card reveal" data-href="https://github.com/arjunv122/Trust-Guard-AI-Extension">
+          <div class="project-header">
+            <div class="project-icon">🛡️</div>
+            <div class="project-links">
+              <a href="https://github.com/arjunv122/Trust-Guard-AI-Extension" target="_blank"
+                title="View Source">&#60;/&#62;</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge internship">🏆 CUKCS-AITHON 2026</span>
+            <h3 class="project-title">Trust Guard AI Extension</h3>
+            <p class="project-desc">AI-powered browser extension for safe & trusted AI interactions. Domain Winner at
+              the National Level Hackathon organized by Central University of Karnataka.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>JavaScript</span><span>AI/ML</span><span>Browser API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// milestones</span>
+        <h2 class="section-title">Achievements & Activities</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-title">Domain Winner — Safe & Trusted AI</div>
+          <div class="ach-desc">CUKCS-AITHON 2026, National Level Hackathon at Central University of Karnataka.</div>
+          <span class="ach-date">January 2026</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">📄</div>
+          <div class="ach-title">Paper Presentation — ICCIC 2025</div>
+          <div class="ach-desc">Solo presentation on "Automated Vulnerability Assessment of Educational Institution
+            Websites Using LLM" at an International Conference.</div>
+          <span class="ach-date">2025</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">☁️</div>
+          <div class="ach-title">AWS Academy Graduate</div>
+          <div class="ach-desc">Machine Learning Foundations certification from Amazon Web Services Academy.</div>
+          <span class="ach-date">December 2025</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🔓</div>
+          <div class="ach-title">Ethical Hacking Certification</div>
+          <div class="ach-desc">Completed comprehensive Ethical Hacking course on Udemy covering penetration testing
+            methodologies.</div>
+          <span class="ach-date">2025</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">📚</div>
+          <div class="ach-title">Book Chapter — ML & PSO</div>
+          <div class="ach-desc">Co-authored a book chapter on Heart Disease Classification using Machine Learning and
+            Particle Swarm Optimization.</div>
+          <span class="ach-date">2025</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🏸</div>
+          <div class="ach-title">Extra-Curriculars</div>
+          <div class="ach-desc">Active in Badminton and Storytelling. Fluent in Tamil and English.</div>
+          <span class="ach-date">Ongoing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// let's connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>I'm currently looking for entry-level opportunities in ethical hacking and vulnerability assessment.
+            Whether you have a question or just want to say hi, feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:arjunv12214@gmail.com" class="contact-link">
+              <div class="cl-icon">📧</div>
+              <div>
+                <div class="cl-label">Email</div>
+                <div class="cl-value">arjunv12214@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+917200290288" class="contact-link">
+              <div class="cl-icon">📱</div>
+              <div>
+                <div class="cl-label">Phone</div>
+                <div class="cl-value">+91 7200290288</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/arjunv12/" target="_blank" class="contact-link">
+              <div class="cl-icon">💼</div>
+              <div>
+                <div class="cl-label">LinkedIn</div>
+                <div class="cl-value">linkedin.com/in/arjunv12</div>
+              </div>
+            </a>
+            <a href="https://github.com/arjunv122" target="_blank" class="contact-link">
+              <div class="cl-icon">⚡</div>
+              <div>
+                <div class="cl-label">GitHub</div>
+                <div class="cl-value">github.com/arjunv122</div>
+              </div>
+            </a>
+            <a href="https://leetcode.com/u/7V3IynF2rv/" target="_blank" class="contact-link">
+              <div class="cl-icon">🧩</div>
+              <div>
+                <div class="cl-label">LeetCode</div>
+                <div class="cl-value">leetcode.com/u/7V3IynF2rv</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group"><input type="text" placeholder="Your Name" required id="formName"></div>
+            <div class="form-group"><input type="email" placeholder="Your Email" required id="formEmail"></div>
+            <div class="form-group"><input type="text" placeholder="Subject" id="formSubject"></div>
+            <div class="form-group"><textarea placeholder="Your Message..." required id="formMessage"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">🚀 Send
+              Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Designed & Built by <strong>Arjun V</strong> with <span class="heart">♥</span> · 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
